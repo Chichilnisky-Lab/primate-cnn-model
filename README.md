@@ -15,4 +15,4 @@
 
 #### This repository is accompanied by a preprint on bioRxiv: [insert URL]. Please see the manuscript for additional details.
 
-#### Authors: Alex Gogliettino and Sam Cooler (Chichilnisky Lab, 2024). We would also like to acknowledge Joshua Melander from the Baccus Lab, who provided inspiration and guidance on the model.
+#### Authors: Alex Gogliettino and Sam Cooler (Chichilnisky Lab, 2024). We would also like to acknowledge Joshua Melander, Steve Baccus and other members from the Baccus Lab, who provided inspiration and guidance on the model with their Deep Retina project.
