@@ -1,8 +1,18 @@
-# primate-deep-retina
+# primate-cnn-model
 
 ## Overview
-### In this repository, we provide a data and model release of the Deep Retina light response model applied to recordings of primate retinal ganglion cells acquired from the Chichilnisky Lab at Stanford University. This model was originally developed by the Baccus lab in the salamander retina, in a series of two papers linked here: [Mcintosh et al., 2016 _NeurIPS_](https://proceedings.neurips.cc/paper/2016/hash/a1d33d0dfec820b41b54430b50e96b5c-Abstract.html) and [Maheswaranathan et al., 2023 _Neuron_](https://www.cell.com/neuron/fulltext/S0896-6273(23)00467-1). This data release is accompanied by a preprint linked here: [TODO].
+### In this repository, we provide a convolutional neural network (CNN) light response model implementation applied to responses of primate retinal ganglion cells to visual stimulation with natural images. We also implement a LN model using the same stochastic gradient descent framework as used for the CNN model.
 
-We provide preprocessed training, validation and test data from three primate retinal recordings. In each directory (```retina1```, ```retina2```, ```retina3```), there are two subdirectories: ```data``` and ```models```. In ```data```, 
+## Data preprocessing
+### Electrical recordings of primate RGCs during stimulation with natural images from the ImageNet database were acquired on a mutli-electrode array system at 20 kHz and spike sorting with KiloSort 2 was performed. Spikes were binned at 8.33 ms precision and smoothed with a Gaussian kernel (σ = 8.33 ms). The stimuli were 8 bit grayscaled images on a grid of size 160x320 and downsampled 2x to 80x160 for model training.
 
+## File organization
+### ```./src/config.py```: a config file that contains hyperparameters to be set for the model as well as other constants used throughout the repository.
+### ```./src/Dataset.py```: dataloader class for the batch sampler used in mini-batch gradient descent.
+### ```./src/models.py```: model definition for the CNN/LN model.
+### ```./src/misc_util.py```: handful of functions that are used within the dataset class and model definition.
+### ```./scripts/train_model.py```: contains a training script that loads the preprocessed data, performs mini-batch gradient descent and writes model files to disk after each training epoch.
 
+### This repository is accompanied by a preprint on bioRxiv: [insert URL]. Please see the manuscript for additional details.
+
+### Authors: Alex Gogliettino and Sam Cooler (Chichilnisky Lab, 2024). We would also like to acknowledge Joshua Melander from the Baccus Lab, who provided inspiration and guidance on the model.
