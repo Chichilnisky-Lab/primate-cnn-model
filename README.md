@@ -13,6 +13,6 @@
 #### ```./src/misc_util.py```: handful of functions that are used within the dataset class and model definition.
 #### ```./scripts/train_model.py```: contains a training script that loads the preprocessed data, performs mini-batch gradient descent and writes model files to disk after each training epoch.
 
-#### This repository is accompanied by a preprint on bioRxiv: [insert URL]. Please see the manuscript for additional details.
+#### This repository is accompanied by a preprint on bioRxiv: https://www.biorxiv.org/content/10.1101/2024.03.22.586353.abstract. Please see the manuscript for additional details.
 
 #### Authors: Alex Gogliettino and Sam Cooler (Chichilnisky Lab, 2024). We would also like to acknowledge Joshua Melander, Steve Baccus and other members from the Baccus Lab, who provided inspiration and guidance on the model with their Deep Retina project.
